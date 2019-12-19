@@ -1,0 +1,43 @@
+------------------------------------------------------------------------
+The Specification of Classifier is:
+------------------------------------------------------------------------
+Layers Config : 
+Neural Network Type :  1D Convulotional
+No. 1st layer filters:  80 || No. of Classes:  1
+Kernel Size =  3 || stride =  1 || Padding :  same
+------------------------------------------------------------------------
+Activtion Function:  selu
+Output Layer Activtion Function:  sigmoid
+Loss Function :  binary_crossentropy
+No. of Epochs :  100
+------------------------------------------------------------------------
+Optimizer Config : 
+Type : Adam  || Learning Rate:  0.006 ||  Decay :  0
+------------------------------------------------------------------------
+Learning Duration :  130.96  (secs) ~ =  2.0 (mins)
+------------------------------------------------------------------------
+
+----------------->>>      29      <<<-----------------------
+========================================================================
+Results:
+------------------------------------------------------------------------
+TrainSet Acc =  99.532 %
+
+-----------------------
+ValidSet Acc =  99.365 %
+
+-----------------------
+TestSet Acc =  78.228 %
+
+-----------------------
+Test-21 Set Acc =  61.477 %
+
+---------------->>   Mean And Variance   <<-----------------
+Train Set Mean   =  99.562  ||  Train Set Std Dev.   =  0.134
+
+Valid Set Mean   =  99.439  ||  Valid Set Std.Dev.   =  0.128
+
+Test Set Mean    =  76.887  ||  Test Set Std. Dev.    =  1.13
+
+Test-21 Set Mean =  58.477    ||  Test-21 Set Std. Dev. =  2.065
+Test-21 Set: Min =  54.7   ||  Max =  62.228

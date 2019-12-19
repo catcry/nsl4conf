@@ -1,0 +1,6 @@
+---------------->>   Mean And Variance   <<-----------------
+Train Set Mean =  99.764 || Train Set Variance =  0.001
+
+Test Set Mean =  79.442 || Test Set Variance =  1.358
+
+Test-21 Set Mean =  62.066 || Test-21 Set Variance =  4.826

@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+The Specification of Classifier is:
+------------------------------------------------------------------------
+Layers Config : 
+Neural Network Type :  GRU
+No. of 1st Layer:  30 || No. of 2nd Layer : 50 || No. of Classes:  1
+------------------------------------------------------------------------
+Activtion Function:  elu
+Output Layer Activtion Function:  sigmoid
+Loss Function :  binary_crossentropy
+No. of Epochs :  150
+------------------------------------------------------------------------
+Optimizer Config : 
+Type : Adam  || Learning Rate:  0.006 ||  Decay :  0
+------------------------------------------------------------------------
+Learning Duration :  65.47  (secs) ~ =  1.0 (mins)
+------------------------------------------------------------------------
+
+---------------->>   Mean And Variance   <<-----------------
+Train Set Mean =  99.795 || Train Set Variance =  0.0
+
+Test Set Mean =  79.665 || Test Set Variance =  1.758
+
+Test-21 Set Mean =  62.235 || Test-21 Set Variance =  6.473
+
