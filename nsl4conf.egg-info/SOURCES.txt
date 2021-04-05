@@ -1,0 +1,6 @@
+README.md
+setup.py
+nsl4conf.egg-info/PKG-INFO
+nsl4conf.egg-info/SOURCES.txt
+nsl4conf.egg-info/dependency_links.txt
+nsl4conf.egg-info/top_level.txt

@@ -51,16 +51,21 @@ from prepstand_multi import prep_stand_multi
 # from prepmanual import prep_manual
 
 class Deep_gen():
+    """ This class is used to generate Deep models,
+    for now : A model that is an object of this class can call two methods:
+        1. 
+    """
+    
     def __init__(self, net_type, **options):
         # self.arch = architecute
         # self.opt = optimizer
-        
+        self.net_type = net_type
         
     
     def cc_model(self,net_input,architecture, optimizer='adam',\
                   activation = 'elu',bias = True, **options):
         self.input = net_input
-        self.arch = artitecture
+        self.arch = architecture
         self.input_shape = net_input.shape
         if type(activation) == str:
             self.act = [activation for layer in self.arch]

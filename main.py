@@ -16,6 +16,9 @@ from nsl4conf.Models.model_gen import *
 ##############################################################################
 
 #======>>     Sets
+faddr = "/home/catcry/cc/nsl4conf/sets/iris.data"
+seperator = ','
+data = pd.read_csv(faddr,sep = seperator)
 Xtrain = 
 Ytrain = 
 
@@ -66,11 +69,13 @@ metrics = ['mae', 'acc']
 
 net_model = Model_gen(net_type = "Deep")
 
-net_model.cc_model(net_input = Xtrain, architecture = architecture,\
-                  optimizer= optimizer, activation = activation)
+net_model.cc_optimizer(learning_rate = learning_rate, decay = 0, optimizer = optimizer_type)
 
-net_model.cc_model.compile (loss=loss_function, \
-                            optimizer = cc_model.optimizer,\
+net_model.cc_model(net_input = Xtrain, architecture = architecture,\
+                  optimizer= net_model.cc_optimizer , activation = activation)
+
+net_model.compile (loss=loss_function, \
+                            optimizer = net_model.cc_model.optimizer,\
                             metrics=metrics)
 
 
